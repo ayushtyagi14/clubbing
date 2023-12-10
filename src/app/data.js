@@ -4,7 +4,7 @@ export const data = [
     name: "Playboy",
     timings: "10PM Onwards",
     location: "Vasant Vihar",
-    category: "Night Club",
+    category: "Night Clubs",
     imageUrl: "/assets/playboy.jpg"
   },
   {
@@ -20,7 +20,7 @@ export const data = [
     name: "SoHo Delhi",
     timings: "10PM Onwards",
     location: "Chanakyapuri",
-    category: "Night Club",
+    category: "Night Clubs",
     imageUrl: "/assets/soho.webp"
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     name: "Monet",
     timings: "10PM Onwards",
     location: "Andrews Ganj",
-    category: "Night Club",
+    category: "Night Clubs",
     imageUrl: "/assets/monet.webp"
   },
   {

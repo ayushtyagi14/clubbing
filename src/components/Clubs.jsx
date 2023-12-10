@@ -44,16 +44,12 @@ const Clubs = () => {
     };
 
     return (
-      <div className="relative w-full mx-auto">
+      <div className="relative w-full mx-auto mb-16">
         <Swiper
           ref={swiperRef}
           modules={[Autoplay]}
           spaceBetween={10}
-          slidesPerView={mobile ? 1.1 : 3}
-          autoplay={{
-            delay: autoplayDelay,
-            disableOnInteraction: false,
-          }}
+          slidesPerView={mobile ? 1.2 : 3}
           speed={videoDelay}
           loop={true}
           centeredSlides={false}
@@ -63,7 +59,7 @@ const Clubs = () => {
           {items.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="w-full py-4 px-3 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 card flex flex-col items-center"
+              className="w-full py-4 px-3 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 glass-card mb-10 ml-1 mt-1 flex flex-col items-center"
             >
               <div className="mb-4">
                 <Image
@@ -75,11 +71,11 @@ const Clubs = () => {
                 />
               </div>
               <div className="flex flow-row items-center w-full justify-between">
-                <h1 className="text-[18px]">{item.name}</h1>
+                <h1 className="text-[18px] font-bold">{item.name}</h1>
                 <p>{item.location}</p>
               </div>
               <p className="text-center mt-3">{item.timings}</p>
-              <p className="text-center mt-5 w-1/2 mx-auto py-2 rounded-xl bg-[#6F3BDD]">
+              <p className="text-center mt-5 w-1/2 mx-auto py-2 rounded-xl bg-[#6F3BDD] text-white">
                 Reserve Now
               </p>
             </SwiperSlide>
@@ -93,7 +89,10 @@ const Clubs = () => {
     <main className="w-[90%] mx-auto my-8">
       {Object.entries(categorizedData).map(([category, items]) => (
         <div key={category} className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">{category}</h2>
+          <div className="flex flex-row items-center w-full justify-between mb-4">
+            <h2 className="text-2xl font-bold">{category}</h2>
+            <button>View All</button>
+          </div>
           <Slider items={items} />
         </div>
       ))}
