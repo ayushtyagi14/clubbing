@@ -11,7 +11,7 @@ const Navbar = () => {
         height="20"
         src="https://img.icons8.com/material-rounded/20/chevron-left.png"
         alt="chevron-left"
-        onClick={() => router.push('/')}
+        onClick={() => router.push("/club-detail")}
       />
       <h1 className="text-[18px] font-bold">Baardos La Citta</h1>
     </div>
