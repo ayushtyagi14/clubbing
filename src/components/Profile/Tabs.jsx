@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Tabs = () => {
   const router = useRouter();
 
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("profile");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -15,9 +15,9 @@ const Tabs = () => {
     <div className="fixed bottom-0 w-full flex justify-between bg-white p-5 rounded-t-lg shadow-2xl border z-[999]">
       <button
         className={`flex flex-col items-center focus:outline-none ${
-          activeTab === "home" ? "text-[#6F3BDD]" : "text-gray-500"
+          activeTab === "" ? "text-[#6F3BDD]" : "text-gray-500"
         }`}
-        onClick={() => handleTabClick("home")}
+        onClick={() => handleTabClick("")}
       >
         <img
           width="20"

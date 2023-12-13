@@ -12,8 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      {/* Navbar */}
+    <>
       <nav className="p-4 flex justify-between items-center">
         <div className="flex items-center">
           <button
@@ -29,15 +28,15 @@ const Navbar = () => {
           </button>
         </div>
 
-        <h1 className="text-[20px] font-bold">Clubbing</h1>
+        <h1 className="font-bold">@ayushtyagi</h1>
 
         <div className="flex items-center">
           <button className="">
             <img
-              width="24"
-              height="24"
-              src="https://img.icons8.com/material-outlined/24/search--v1.png"
-              alt="search--v1"
+              width="30"
+              height="30"
+              src="https://img.icons8.com/puffy-filled/30/experimental-create-new-puffy-filled.png"
+              alt="experimental-create-new-puffy-filled"
             />
           </button>
         </div>
@@ -89,7 +88,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
